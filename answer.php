@@ -43,12 +43,17 @@
     </header>
     <main class="mdl-layout__content">
       <div class="right-image">
-        <img src="./images/street.jpg" alt="The word street in black letters, image" />
+        <img src="./images/notebook-animation.svg" alt="laptop image" width="250" />
       </div>
-      <div class="page-content">The address is ...</div>
-      <br />
-      <div class="page-content-answer">
-        <a href="./index.php">Return ...</a>
+      <div class="page-content-php">
+        <div id="user-info">
+          <?php
+          $number = $_GET["number"];
+          $name = $_GET["name"];
+
+          echo "<p>The address is: " . $number . " " . $name . ".</p>";
+          ?>
+        </div>
       </div>
     </main>
   </div>
