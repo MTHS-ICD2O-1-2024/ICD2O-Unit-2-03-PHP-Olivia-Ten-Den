@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="The street program, JS" />
+  <meta name="description" content="The Address program, PHP" />
   <meta name="keywords" content="mths, icd2o" />
   <meta name="author" content="Olivia TD" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,59 +30,42 @@
     sizes="16x16"
     href="./favicon-16x16.png" />
   <link rel="manifest" href="./site.webmanifest" />
-  <title>The street program, JS</title>
+  <title>The Address program, PHP</title>
 </head>
 
 <body>
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-  <script src="./js/script.js"></script>
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">The street program, JS</span>
+        <span class="mdl-layout-title">The Address program, PHP!</span>
       </div>
     </header>
     <main class="mdl-layout__content">
       <div class="right-image">
-        <img
-          src="./images/street.jpg"
-          alt="The word street written in black letters infront of a brick wall" />
+        <img src="./images/street.jpg" alt="The word street spelt out in black, image" />
       </div>
-      <div class="page-content">Please enter the following:</div>
-      <br />
-      <form>
-        <!-- Numeric Textfield -->
-        <p>Street Number</p>
-        <div class="mdl-textfield mdl-js-textfield">
-          <input
-            class="mdl-textfield__input"
-            type="text"
-            pattern="-?[0-9]*(\.[0-9]+)?"
-            id="street-number" />
-          <label class="mdl-textfield__label" for="number-entered">Number here ...</label>
-          <span class="mdl-textfield__error">Input is not a number!</span>
-        </div>
-        <br />
-        <!-- Simple Textfield -->
-        <p>Street Name</p>
-        <div class="mdl-textfield mdl-js-textfield">
-          <input class="mdl-textfield__input" type="text" id="street-name" />
-          <label class="mdl-textfield__label" for="sample1">Name here...</label>
-        </div>
-        <br />
-        <!-- Raised button with ripple -->
-        <button
-          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="enterClicked()"
-          type="button">
-          Enter
-        </button>
-      </form>
-      <br />
-      <div class="page-content-answer">
-        <div id="user-address">
-          <p>Click Enter to see the address.</p>
-        </div>
+      <div class="page-content-php">
+        <form action="answer.php" method="GET">
+          <p>Street Name</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" name="name">
+            <label class="mdl-textfield__label" for="name-input">Street name here ...</label>
+          </div>
+          <br />
+          <p>Street Number</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type=" text" pattern="-?[0-9]*(\.[0-9]+)?" name="number">
+            <label class="mdl-textfield__label" for="age-input">Street number here ...</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+          <br />
+          <!-- Accent-colored raised button with ripple -->
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+            type="submit">
+            Enter
+          </button>
+        </form>
       </div>
     </main>
   </div>
