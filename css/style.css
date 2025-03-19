@@ -1,17 +1,17 @@
 /* Created by: Olivia Ten Den 
-* Created on: March 17
+* Created on: March 7
 * This file contains the CSS for index.html
 */
 
 .mdl-layout__header-row {
   justify-content: center;
-  padding: 15;
+  padding: 0;
 }
 
 .mdl-layout__content {
   padding-left: 20pt;
   padding-right: 20pt;
-  padding-top: 25pt;
+  padding-top: 20pt;
 }
 
 .mdl-textfield__error {
@@ -19,9 +19,9 @@
 }
 
 .page-content {
-  color: rgb(14, 17, 88);
+  color: rgb(0, 0, 0);
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.75rem;
 }
 
 body {
@@ -29,6 +29,7 @@ body {
 }
 
 img {
+  height: auto;
+  width: 250px;
   float: right;
-  height: 150px;
 }
